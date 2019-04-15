@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20190411191447) do
 
   create_table "workouts", force: :cascade do |t|
     t.string "name"
-    t.string "body_part", default: [], null: false, array: true
+    t.string "body_part"
     t.integer "sets"
     t.integer "reps"
     t.datetime "created_at", null: false
